@@ -19,9 +19,8 @@ const SignUp = () => {
     };
 
     return (
-        
-        <div className="min-h-screen flex items-center justify-center ">
-            <div className="bg-white p-8 rounded-lg shadow-2xl w-full max-w-md transform transition-transform hover:scale-105 duration-300 ease-in-out bg-gradient-to-r from-purple-500 to-blue-500">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-300 to-blue-600 py-12 px-4">
+            <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-md transform transition-transform hover:scale-105 duration-300 ease-in-out">
                 <h2 className="text-4xl font-extrabold text-gray-800 text-center mb-6">
                     Create Your Account
                 </h2>
@@ -36,7 +35,7 @@ const SignUp = () => {
                         <input
                             type="email"
                             id="email"
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200"
                             placeholder="Enter your email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -50,7 +49,7 @@ const SignUp = () => {
                         <input
                             type="password"
                             id="password"
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200"
                             placeholder="Enter your password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -64,7 +63,7 @@ const SignUp = () => {
                         <input
                             type="password"
                             id="confirm-password"
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200"
                             placeholder="Confirm your password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
@@ -73,14 +72,14 @@ const SignUp = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
                     >
                         Sign Up
                     </button>
                 </form>
                 <p className="text-center text-gray-600 mt-6">
                     Already have an account?{' '}
-                    <Link to="/login" className="text-purple-500 hover:text-purple-700 transition duration-300 ease-in-out">
+                    <Link to="/login" className="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out">
                         Log in
                     </Link>
                 </p>
