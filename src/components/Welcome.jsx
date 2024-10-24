@@ -72,7 +72,7 @@ import React, { useState, useEffect } from 'react';
 
 const Welcome = () => {
     const book = [
-        " ", "B", "Bo", "Boo", "Book", "BookB", "BookBri", 
+        "HELLO WORLD", "B", "Bo", "Boo", "Book", "BookB", "BookBri", 
         "BookBrid", "BookBridge", "Where", "Where You", 
         "Where You Can", "Where You Can Exchange", 
         "Where You Can Exchange Books"
